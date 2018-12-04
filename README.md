@@ -58,7 +58,7 @@ Install-Package AspNetCore.HealthChecks.Aws.S3
 
 Once the package is installed you can add the HealthCheck using the **AddXXX** extension methods.
 
-> We use [MyGet](https://www.myget.org/F/xabaril/api/v3/index.json) feed for preview versions of HealthChceks pacakges.
+> We use [MyGet](https://www.myget.org/F/xabaril/api/v3/index.json) feed for preview versions of HealthChecks pacakges.
 
 ```csharp
 public void ConfigureServices(IServiceCollection services)
@@ -144,7 +144,8 @@ By default HealthChecks returns a simple Status Code (200 or 503) without the He
 });
 ```
 
-> *WriteHealthCheckUIResponse* is defined on HealthChecks.UI.Client nuget package.
+> *WriteHealthCheckUIResponse* is defined on HealthChecks.UI.Client 
+package.
 
 To show these HealthChecks in HealthCheck-UI they have to be configured through the **HealthCheck-UI** settings. 
 
